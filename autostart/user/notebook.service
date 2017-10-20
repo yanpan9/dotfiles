@@ -1,0 +1,6 @@
+[Unit]
+Description = notebook
+[Service]
+ExecStart = /usr/bin/jupyter notebook /home/yanpan/NoteBook/
+[Install]
+WantedBy = default.target

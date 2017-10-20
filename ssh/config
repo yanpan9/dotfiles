@@ -1,0 +1,25 @@
+Host vultr
+HostName 45.32.16.239
+User root
+Port 1994
+
+Host bwg
+HostName 104.224.169.89
+User root
+Port 26655
+
+Host Ali
+HostName 39.108.212.28
+User yanpan
+Port 22
+#Admin-332
+
+Host tiaoban
+HostName 121.48.175.168
+User yanpan
+Port 22
+
+Host myserver
+HostName 121.48.175.168
+User yanpan
+Port 5022

@@ -1,0 +1,6 @@
+[Unit]
+Description = autochangebackground
+[Service]
+ExecStart = /usr/bin/AutoChangeBg /home/yanpan/OneDrive/Pictures/WallPapers/
+[Install]
+WantedBy = default.target

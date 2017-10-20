@@ -1,0 +1,6 @@
+[Unit]
+Description = frp
+[Service]
+ExecStart = /home/yanpan/SoftWare/frp/frpc -c /home/yanpan/SoftWare/frp/frpc.ini
+[Install]
+WantedBy = multi-user.target
