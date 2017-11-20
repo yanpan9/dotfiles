@@ -15,11 +15,26 @@ Port 22
 #Admin-332
 
 Host tiaoban
-HostName 121.48.175.168
+HostName frp.cnyanpan.top
 User yanpan
-Port 22
+Port 6022
 
-Host myserver
+Host 123
 HostName 121.48.175.168
 User yanpan
 Port 5022
+
+Host 107
+HostName 121.48.175.168
+User yanpan
+Port 25002
+
+Host ubuntu
+HostName 192.168.31.10
+User yanpan
+Port 22
+
+
+Host aur.archlinux.org
+IdentityFile ~/.ssh/aur
+User aur
