@@ -5,6 +5,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim'
 Plug 'klen/python-mode'
 Plug 'altercation/vim-colors-solarized'
+Plug 'vim-scripts/winmanager'
 "Plug 'valloric/youcompleteme'
 call plug#end()
 
