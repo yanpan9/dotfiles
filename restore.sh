@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#bash 
+ln ./bash/bashrc ~/.bashrc
+
 #i3
 ln ./i3/config ~/.config/i3/config
 

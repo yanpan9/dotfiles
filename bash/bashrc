@@ -1,0 +1,33 @@
+#
+# ~/.bashrc
+#
+
+alias ls='ls --color=auto'
+alias y='yaourt'
+alias p='pacman'
+alias vim='nvim'
+export VISUAL=nvim
+export Typora_Theme=/home/yanpan/.config/Typora/themes/
+export BRIGHTNESS=/sys/class/backlight/intel_backlight/brightness
+export MOUNT=/run/media/yanpan/
+export LC_ALL=zh_CN.UTF8
+export LANG=zh_CN.UTF8
+#export CLASSPATH=/usr/lib/jvm/default/lib/dt.jar;.;/usr/lib/jvm/default/lib/tools.jar
+#PS1='[\u \W]\$ '
+
+#powerline for shell
+export TERM=xterm-256color
+function _update_ps1() {
+    PS1="$(/home/yanpan/Study/github/powerline-shell/powerline-shell.py $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+#cuda config 
+export CUDA_HOME=/opt/cuda
+export PATH=${CUDA_HOME}/bin/:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64:$CUDA_HOME/extras/CUPTI/lib64 
+
+#yanpan 来此一游
