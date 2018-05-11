@@ -12,16 +12,18 @@ export BRIGHTNESS=/sys/class/backlight/intel_backlight/brightness
 export MOUNT=/run/media/yanpan/
 export LC_ALL=zh_CN.UTF8
 export LANG=zh_CN.UTF8
+
+
 #export CLASSPATH=/usr/lib/jvm/default/lib/dt.jar;.;/usr/lib/jvm/default/lib/tools.jar
 #PS1='[\u \W]\$ '
 
-#powerline for shell
-export TERM=xterm-256color
+
+#powerline for shell(pip install)
 function _update_ps1() {
-    PS1="$(/home/yanpan/Study/github/powerline-shell/powerline-shell.py $?)"
+    PS1=$(powerline-shell $?)
 }
 
-if [ "$TERM" != "linux" ]; then
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 

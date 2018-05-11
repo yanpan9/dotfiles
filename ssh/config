@@ -17,15 +17,15 @@ Port 22
 Host tiaoban
 HostName frp.cnyanpan.top
 User yanpan
-Port 6022
+Port 5022
 
 Host 123
-HostName 121.48.175.168
+HostName 121.48.175.150
 User yanpan
 Port 5022
 
 Host 107
-HostName 121.48.175.168
+HostName 121.48.175.150
 User yanpan
 Port 25002
 
