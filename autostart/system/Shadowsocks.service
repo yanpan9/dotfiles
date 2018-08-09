@@ -1,0 +1,6 @@
+[Unit]
+Description = Shadowsocks
+[Service]
+ExecStart = /user/bin/ssserver -c /opt/Shadowsocks/shadowsocks.ini
+[Install]
+WantedBy = multi-user.target
