@@ -1,6 +1,6 @@
 [Unit]
 Description = Shadowsocks
 [Service]
-ExecStart = /user/bin/ssserver -c /opt/Shadowsocks/shadowsocks.json
+ExecStart = /usr/bin/ssserver -c /opt/Shadowsocks/shadowsocks.json
 [Install]
 WantedBy = multi-user.target
