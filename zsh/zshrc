@@ -1,0 +1,14 @@
+# Created by yanpan for 5.7.1
+## Some aliases
+alias ls='ls --color=auto'
+alias y="yaourt"
+alias p="pacman"
+alias vim="nvim"
+export VISUAL="nvim"
+
+## spaceship prompt config
+autoload -U promptinit; promptinit
+prompt spaceship
+
+## zsh autosuggestions config
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
